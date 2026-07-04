@@ -10,5 +10,6 @@
 ## Database
 |  |
 | ------- |
+| [0620-not-boring-movies](https://github.com/keshavpotewar/SQL-Problems-Solution/tree/master/0620-not-boring-movies) |
 | [1683-invalid-tweets](https://github.com/keshavpotewar/SQL-Problems-Solution/tree/master/1683-invalid-tweets) |
 <!---LeetCode Topics End-->
