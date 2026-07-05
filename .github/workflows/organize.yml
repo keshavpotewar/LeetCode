@@ -36,6 +36,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            git commit -m "Auto organize LeetHub solutions"
+            git commit -m "Auto organize solutions"
             git push
           fi
