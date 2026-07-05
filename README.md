@@ -19,4 +19,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0151-reverse-words-in-a-string](https://github.com/keshavpotewar/LeetCode/tree/main/0151-reverse-words-in-a-string/) | Medium |
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0001-two-sum](https://github.com/keshavpotewar/LeetCode/tree/main/0001-two-sum/) | Easy |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0001-two-sum](https://github.com/keshavpotewar/LeetCode/tree/main/0001-two-sum/) | Easy |
 <!---LeetCode Topics End-->
