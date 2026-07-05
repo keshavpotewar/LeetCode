@@ -9,6 +9,7 @@
 | [0620-not-boring-movies](https://github.com/keshavpotewar/SQL-Problems-Solution/tree/master/0620-not-boring-movies) |
 | [1148-article-views-i](https://github.com/keshavpotewar/SQL-Problems-Solution/tree/master/1148-article-views-i) |
 | [1683-invalid-tweets](https://github.com/keshavpotewar/SQL-Problems-Solution/tree/master/1683-invalid-tweets) |
+| [2356-number-of-unique-subjects-taught-by-each-teacher](https://github.com/keshavpotewar/LeetCode/tree/main/2356-number-of-unique-subjects-taught-by-each-teacher/) | Easy |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
