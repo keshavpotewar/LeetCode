@@ -1,5 +1,7 @@
 import shutil
 from pathlib import Path
+import subprocess
+import re
 
 ROOT = Path(__file__).parent
 
@@ -76,46 +78,70 @@ for problem_folder in folders:
     print(f"Moved: {problem_folder.name} -> {language}")
     count += 1
 
+def get_repo_url():
+    """
+    Returns:
+    https://github.com/<username>/<repo>/tree/main
+    """
+
+    try:
+        remote = subprocess.check_output(
+            ["git", "config", "--get", "remote.origin.url"],
+            text=True
+        ).strip()
+
+        # SSH
+        # git@github.com:user/repo.git
+        if remote.startswith("git@github.com:"):
+            remote = remote.replace("git@github.com:", "https://github.com/")
+
+        # HTTPS
+        # https://github.com/user/repo.git
+        remote = remote.replace(".git", "")
+
+        return remote + "/tree/main"
+
+    except Exception:
+        return None
+
 
 readme = ROOT / "README.md"
 
 if readme.exists():
 
-    text = readme.read_text(encoding="utf-8")
+    repo_url = get_repo_url()
 
-    folder_map = {}
+    if repo_url is None:
+        print("Couldn't determine GitHub repository.")
+    else:
 
-    for language in LANGUAGE_MAP.values():
+        text = readme.read_text(encoding="utf-8")
 
-        language_path = ROOT / language
+        folder_map = {}
 
-        if not language_path.exists():
-            continue
+        # Build mapping automatically
+        for language in LANGUAGE_MAP.values():
 
-        for folder in language_path.iterdir():
+            language_path = ROOT / language
 
-            if folder.is_dir():
-                folder_map[folder.name] = f"{language}/{folder.name}"
+            if not language_path.exists():
+                continue
 
+            for folder in language_path.iterdir():
 
-    for old_folder, new_folder in folder_map.items():
+                if folder.is_dir():
+                    folder_map[folder.name] = f"{language}/{folder.name}"
 
-        text = text.replace(
-            f"](./{old_folder}/)",
-            f"](./{new_folder}/)"
-        )
+        # Replace every old link
+        for old_folder, new_folder in folder_map.items():
 
-        text = text.replace(
-            f"](./{old_folder})",
-            f"](./{new_folder})"
-        )
+            old_link = f"{repo_url}/{old_folder}"
+            new_link = f"{repo_url}/{new_folder}"
 
-        text = text.replace(
-            f"href=\"./{old_folder}/\"",
-            f"href=\"./{new_folder}/\""
-        )
+            text = text.replace(old_link, new_link)
 
-    readme.write_text(text, encoding="utf-8")
-    print("README links updated.")
+        readme.write_text(text, encoding="utf-8")
+
+        print("README links updated.")
 
 print(f"\nDone! {count} folders moved.")
