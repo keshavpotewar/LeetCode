@@ -14,6 +14,7 @@
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/keshavpotewar/LeetCode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0151-reverse-words-in-a-string](https://github.com/keshavpotewar/LeetCode/tree/main/Python/0151-reverse-words-in-a-string/) | Medium |
 ## String
 | Problem Name | Difficulty |
@@ -25,6 +26,7 @@
 | ------- | ------- |
 | [0001-two-sum](https://github.com/keshavpotewar/LeetCode/tree/main/Python/0001-two-sum/) | Easy |
 | [0004-median-of-two-sorted-arrays](https://github.com/keshavpotewar/LeetCode/tree/main/Python/0004-median-of-two-sorted-arrays/) | Hard |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/keshavpotewar/LeetCode/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
