@@ -14,7 +14,7 @@
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
-| [0011-container-with-most-water](https://github.com/keshavpotewar/LeetCode/tree/main/0011-container-with-most-water/) | Medium |
+| [0011-container-with-most-water](https://github.com/keshavpotewar/LeetCode/tree/main/Python/0011-container-with-most-water/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/keshavpotewar/LeetCode/tree/main/Python/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0151-reverse-words-in-a-string](https://github.com/keshavpotewar/LeetCode/tree/main/Python/0151-reverse-words-in-a-string/) | Medium |
 ## String
@@ -27,7 +27,7 @@
 | ------- | ------- |
 | [0001-two-sum](https://github.com/keshavpotewar/LeetCode/tree/main/Python/0001-two-sum/) | Easy |
 | [0004-median-of-two-sorted-arrays](https://github.com/keshavpotewar/LeetCode/tree/main/Python/0004-median-of-two-sorted-arrays/) | Hard |
-| [0011-container-with-most-water](https://github.com/keshavpotewar/LeetCode/tree/main/0011-container-with-most-water/) | Medium |
+| [0011-container-with-most-water](https://github.com/keshavpotewar/LeetCode/tree/main/Python/0011-container-with-most-water/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/keshavpotewar/LeetCode/tree/main/Python/0026-remove-duplicates-from-sorted-array/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -48,5 +48,5 @@
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
-| [0011-container-with-most-water](https://github.com/keshavpotewar/LeetCode/tree/main/0011-container-with-most-water/) | Medium |
+| [0011-container-with-most-water](https://github.com/keshavpotewar/LeetCode/tree/main/Python/0011-container-with-most-water/) | Medium |
 <!---LeetCode Topics End-->
